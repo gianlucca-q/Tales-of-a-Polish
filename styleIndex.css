@@ -1,0 +1,78 @@
+:root {
+    --primary: #790000;
+    --secondary: #ffffff;
+    --terciary: #a5a5a5;
+}
+
+body {
+    background-color: var(--terciary);
+    max-width: 50%;
+    margin: auto;
+    display: flex;
+    font-size: 10em;
+}
+.contGeneral {
+    background-color: white;
+    min-height: 100vh;
+    width: 100%;
+    padding: 1% 3%;
+
+
+    text-align: center;
+    font-family:monospace;
+    color: var(--primary);
+}
+
+.contAuthor {
+    margin: auto;
+    border-bottom: solid .3vh var(--primary);
+    max-width: 70%;
+    color: black;
+}
+.contAuthor h3 {
+    font-size: 25%;
+}
+
+
+.contTitle {
+    margin: auto;
+    margin-top: 15vh;
+    margin-bottom: 3vh;
+}
+.contTitle h1 { /*"Tales", "Polish"*/ 
+    font-size: 100%;
+}
+.contTitle h2 { /*"of a"*/ 
+    font-size: 50%;
+}
+
+.nextPage, .nextPage:hover {
+    margin: auto;
+    text-decoration: none;
+    color: black;
+    font-size: 30%;
+}
+
+@media (max-width: 1700px) {
+    body  {
+        max-width: 100%;
+        font-size: 10em;
+    }
+    .contAuthor {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    body  {
+        max-width: 100%;
+        font-size: 8em;
+    }
+}
+
+@media (max-width: 800px) {
+    body  {
+        max-width: 100%;
+        font-size: 8.5em;
+    }
+}

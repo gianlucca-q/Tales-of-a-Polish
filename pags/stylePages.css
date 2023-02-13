@@ -1,0 +1,99 @@
+:root {
+    --primary: #790000;
+    --secondary: #ffffff;
+    --terciary: #a5a5a5;
+}
+
+body {
+    background-color: var(--terciary);
+    max-width: 50%;
+    margin: auto;
+    display: flex;
+    font-size: 10em;
+}
+.contGeneral {
+    background-color: white;
+    min-height: 100vh;
+    width: 100%;
+    padding: 1% 3%;
+
+
+    font-family:monospace;
+    color: black;
+}
+
+
+.contHeader {
+    margin: auto;
+    border-bottom: solid .3vh var(--primary);
+    padding: 0 2%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    font-size: 25%;
+}
+.contHeader a, .contHeader a:hover { /*"Tales of a Polish"*/
+    text-decoration: none;
+    color: black;
+}
+
+
+.contSection {
+    margin: auto;
+    margin-top: 3%;
+    max-width: 95%;
+}
+
+.chapterTitle {
+    text-align: center;
+    font-size: 35%;
+    margin-bottom: .5vh;
+}
+.chapterInfo {
+    text-align: center;
+    font-size: 20%;
+    margin-bottom: 2vh;
+}
+.chapterText {
+    font-size: 15%;
+    text-align: justify;
+}
+.chapterEnd {
+    font-size: 35%;
+    text-align: center;
+}
+
+@media (max-width: 1700px) {
+    body  {
+        max-width: 100%;
+        font-size: 10em;
+    }
+    .contAuthor {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    body  {
+        max-width: 100%;
+        font-size: 8em;
+    }
+}
+
+@media (max-width: 800px) {
+    body  {
+        max-width: 100%;
+        font-size: 8.5em;
+    }
+    .contHeader {
+        font-size: 20%;
+    }
+    .chapterTitle {
+        font-size: 30%;
+    }
+    .chapterText {
+        font-size: 16%;
+    }
+}
